@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--ex001 cjs-->
+<!--ex002 cjs-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,8 @@
     <h1>olá, mundo!</h1>
     <p>Já ta massa!</p>
     <script>
-        window.alert('Minha primeira mensagem!') 
-        window.confirm('esta gostando de JS?') // Janela com botão ok e cancelar
-        window.prompt('Qual é seu nome?') //vai perguntar o nome...
+        var nome = window.prompt('Qual é seu nome?') //vai perguntar o nome...
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') //Concatenação (ATENÇÃO! BUG - AO DIGITAR NOME NO NAVEGADOR ELE É ADD A LINHA DE CODIGO DO LADO DE WINDOW)
     </script>
 </body>
 </html>
