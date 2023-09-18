@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema alfandegário</title>
+    <style>
+        div{
+            padding: 5px;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Sistema alfandegário</h1>
+    <label for="ipais"></label>
+    <select name="Estado" id="ipais">
+        <option value="Brasil">Brasil</option>
+        <option value="Espanha">Espanha</option>
+        <option value="China">China</option>
+        <option value="EUA">EUA</option>
+        <option value="França">França</option>
+        <option value="Portugual">Portugual</option>
+        <option value="Japao">Japão</option>
+        <option value="UK">UK</option>
+        
+        
+    </select>
+    <input id="iver" type="button" value="Enviiar" onclick="verificar()">
+    <div id="ires">
+        
+    </div>
+    <script>
+        
+       
+        function verificar(){
+        var pais = window.document.getElementById('ipais')
+        var res = window.document.querySelector('div#ires')
+        var n1  = String(pais.value)
+        if(n1 == "Brasil"){
+            res.innerHTML = 'vivendo em ' + n1 + ' Você é Brasileiro!' 
+        }else{
+            res.innerHTML = 'vivendo em ' + n1 +' Você é estrangeiro!'
+        }
+        
+        }
+    </script>
+
+</body>
+</html>
